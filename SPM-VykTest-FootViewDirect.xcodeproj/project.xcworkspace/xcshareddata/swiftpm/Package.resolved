@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "trackersdkv2",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ChrisKlimpke/TrackerSDKv2",
+      "state" : {
+        "revision" : "982a7b150aca454c8fdc65c2e902a2aa988ac53f",
+        "version" : "1.1.15"
+      }
+    },
+    {
+      "identity" : "vykviewkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ChrisKlimpke/VykViewKit",
+      "state" : {
+        "revision" : "a62c1f36dde8dff894cb3d453d513a28dc314ef5",
+        "version" : "1.0.16"
+      }
+    }
+  ],
+  "version" : 2
+}

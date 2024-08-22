@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SPM_VykTest_FootViewDirect" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f7S-DP-Pvc" userLabel="myVykFootView" customClass="VykFootView" customModule="VykViewKit">
+                                <rect key="frame" x="10" y="59" width="394" height="753"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H7T-OP-Swg">
+                                        <rect key="frame" x="273" y="695" width="63" height="39"/>
+                                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="63" id="Cfd-Im-A9m"/>
+                                            <constraint firstAttribute="height" constant="39" id="ZEq-CI-cY9"/>
+                                        </constraints>
+                                        <state key="normal" title="Rec"/>
+                                        <connections>
+                                            <action selector="Record:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H1p-FL-Wy4"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a7h-nJ-kn6">
+                                        <rect key="frame" x="102" y="700" width="71" height="32"/>
+                                        <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <state key="normal" title="NextShoe"/>
+                                        <connections>
+                                            <action selector="NextShoe:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w1Z-C3-TWz"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cGH-rA-lcC">
+                                        <rect key="frame" x="195" y="694" width="60" height="39"/>
+                                        <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="39" id="9cu-w2-56c"/>
+                                            <constraint firstAttribute="width" constant="60" id="AIe-l3-hWZ"/>
+                                        </constraints>
+                                        <state key="normal" title="Snap"/>
+                                        <connections>
+                                            <action selector="Snap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rfr-YE-vYY"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <constraints>
+                                    <constraint firstItem="cGH-rA-lcC" firstAttribute="leading" secondItem="f7S-DP-Pvc" secondAttribute="leading" constant="195" id="8Ky-sI-0rF"/>
+                                    <constraint firstAttribute="bottom" secondItem="a7h-nJ-kn6" secondAttribute="bottom" constant="21" id="Ag8-7H-q0E"/>
+                                    <constraint firstAttribute="bottom" secondItem="H7T-OP-Swg" secondAttribute="bottom" constant="19" id="FhS-k1-uak"/>
+                                    <constraint firstItem="a7h-nJ-kn6" firstAttribute="leading" secondItem="f7S-DP-Pvc" secondAttribute="leading" constant="102" id="HFr-bW-e0G"/>
+                                    <constraint firstAttribute="bottom" secondItem="cGH-rA-lcC" secondAttribute="bottom" constant="20" id="J7H-h8-E61"/>
+                                    <constraint firstItem="H7T-OP-Swg" firstAttribute="leading" secondItem="f7S-DP-Pvc" secondAttribute="leading" constant="273" id="swi-cX-ZDp"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iXa-R4-NfX">
+                                <rect key="frame" x="30" y="758" width="65" height="34"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Activate"/>
+                                <connections>
+                                    <action selector="Activate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ezZ-f6-4XA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottomMargin" secondItem="iXa-R4-NfX" secondAttribute="bottom" constant="70" id="4Ce-FU-wdF"/>
+                            <constraint firstItem="f7S-DP-Pvc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="Qj6-7x-tei"/>
+                            <constraint firstItem="f7S-DP-Pvc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="WK2-O9-cp1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="f7S-DP-Pvc" secondAttribute="trailing" constant="10" id="ZNG-aY-LhC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="f7S-DP-Pvc" secondAttribute="bottom" constant="50" id="b5b-ze-FiH"/>
+                            <constraint firstItem="iXa-R4-NfX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="gx0-dX-6HT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="myVykFootView" destination="f7S-DP-Pvc" id="Pf8-jO-vaD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="95.652173913043484" y="80.357142857142847"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
